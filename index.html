@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2b1d12" />
+
+  <!-- SEO -->
+  <title>Olive & Oak — Handcrafted Wooden Art & Custom Judaica</title>
+  <meta name="description" content="Handmade wooden art and custom woodworking. Hamsas, Jewish decorative pieces, carved boxes and personalized creations crafted from fine hardwoods by an experienced artisan." />
+  <meta name="keywords" content="handmade wooden art, custom woodworking, hamsa, Judaica, carved wooden box, personalized wood gifts" />
+  <meta name="author" content="Olive & Oak Woodcraft" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Olive & Oak — Handcrafted Wooden Art" />
+  <meta property="og:description" content="Custom handmade wooden creations where tradition meets craftsmanship." />
+  <meta property="og:image" content="Images/Capture4.PNG" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Olive and Oak home">
+        <span class="nav__logo-mark">❦</span>
+        <span class="nav__logo-text">Olive&nbsp;&amp;&nbsp;Oak</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#woods">Woods</a>
+        <a href="#custom">Custom Orders</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__particles" id="particles" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <p class="hero__eyebrow reveal">Handmade · Since 1998</p>
+      <h1 class="hero__title">
+        <span class="reveal">Handcrafted</span>
+        <span class="reveal hero__title-accent">Wooden Art</span>
+      </h1>
+      <p class="hero__subtitle reveal">
+        Where tradition meets craftsmanship — custom Judaica, carved boxes,
+        and one-of-a-kind pieces shaped by hand from the world's finest woods.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#gallery" class="btn btn--primary">Explore the Gallery</a>
+        <a href="#custom" class="btn btn--ghost">Commission a Piece</a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span class="hero__scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="Images/Capture.PNG" alt="A workbench displaying handmade wooden hamsas, boxes and carved keepsakes" loading="lazy" />
+        <div class="about__badge">
+          <span class="about__badge-num">25+</span>
+          <span class="about__badge-label">Years of Craft</span>
+        </div>
+      </div>
+
+      <div class="about__text">
+        <p class="section__eyebrow reveal">The Artist</p>
+        <h2 class="section__title reveal">A lifetime spent listening to the grain</h2>
+        <p class="reveal">
+          Every piece begins as a quiet conversation with the wood. For over two
+          decades, our craftsman has shaped raw hardwood into objects meant to be
+          held, gifted, and passed down — guided by patience, an old set of chisels,
+          and a deep respect for the material.
+        </p>
+        <p class="reveal">
+          The work is unhurried and entirely by hand. From the first carved line to
+          the final coat of natural oil, nothing is mass-produced. Each hamsa, box,
+          and decorative piece carries the marks of the person who made it — and the
+          story of the person it's made for.
+        </p>
+        <ul class="about__list reveal">
+          <li>✦ Traditional hand-carving techniques</li>
+          <li>✦ Natural oils &amp; finishes only</li>
+          <li>✦ Personalized, made-to-order work</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Showcase</p>
+        <h2 class="section__title reveal">The Gallery</h2>
+        <p class="section__lead reveal">
+          A selection of handmade pieces. Click any image to view it closer.
+        </p>
+      </div>
+
+      <div class="gallery__filters reveal" role="tablist" aria-label="Gallery categories">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="hamsas">Hamsas</button>
+        <button class="chip" data-filter="boxes">Wooden Boxes</button>
+        <button class="chip" data-filter="jewish">Jewish Art</button>
+        <button class="chip" data-filter="custom">Custom Designs</button>
+      </div>
+
+      <div class="gallery__grid" id="galleryGrid">
+        <figure class="gallery__item reveal" data-cat="custom">
+          <img src="Images/Capture.PNG" alt="Collection of wooden keepsakes and carved keychains" loading="lazy" />
+          <figcaption>Workshop Collection</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-cat="hamsas">
+          <img src="Images/Capture2.PNG" alt="Turquoise inlaid hamsa hands with menorah motifs" loading="lazy" />
+          <figcaption>Turquoise Hamsas</figcaption>
+        </figure>
+        <figure class="gallery__item reveal gallery__item--tall" data-cat="jewish">
+          <img src="Images/Capture3.PNG" alt="Carved hamsas, Star of David and pomegranate pieces" loading="lazy" />
+          <figcaption>Jewish Symbols</figcaption>
+        </figure>
+        <figure class="gallery__item reveal gallery__item--wide" data-cat="boxes">
+          <img src="Images/Capture4.PNG" alt="Hand-carved wooden chest with peacock and geometric detailing" loading="lazy" />
+          <figcaption>Carved Keepsake Chest</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-cat="jewish">
+          <img src="Images/Capture5.PNG" alt="Wooden tablets, hamsas and Star of David ornaments" loading="lazy" />
+          <figcaption>Sacred Motifs</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-cat="custom">
+          <img src="Images/Capture6.PNG" alt="Decorative wooden fish in teal and natural tones" loading="lazy" />
+          <figcaption>Decorative Fish</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-cat="hamsas">
+          <img src="Images/Capture3.PNG" alt="Detailed hamsa with engraved blessing" loading="lazy" />
+          <figcaption>Blessing Hamsa</figcaption>
+        </figure>
+        <figure class="gallery__item reveal gallery__item--wide" data-cat="boxes">
+          <img src="Images/Capture.PNG" alt="Assorted small wooden boxes with marquetry lids" loading="lazy" />
+          <figcaption>Inlaid Boxes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WOOD TYPES ===== -->
+  <section class="woods section" id="woods">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Materials</p>
+        <h2 class="section__title reveal">The Woods We Work</h2>
+        <p class="section__lead reveal">
+          Each species brings its own colour, scent and character to the finished piece.
+        </p>
+      </div>
+
+      <div class="woods__grid">
+        <article class="wood-card reveal" style="--tone:#7b3f2a">
+          <h3>Cherry</h3>
+          <p>Warm reddish tones that deepen beautifully with age and light. A favourite for heirloom pieces.</p>
+        </article>
+        <article class="wood-card reveal" style="--tone:#4a2c1a">
+          <h3>African Walnut</h3>
+          <p>Rich golden-brown with a lustrous ribbon grain — dramatic, refined and full of depth.</p>
+        </article>
+        <article class="wood-card reveal" style="--tone:#5b3a22">
+          <h3>American Walnut</h3>
+          <p>Classic chocolate hues prized for fine furniture and detailed carving alike.</p>
+        </article>
+        <article class="wood-card reveal" style="--tone:#6e2f1f">
+          <h3>Mahogany</h3>
+          <p>Deep, even reddish-brown with a timeless elegance and remarkable workability.</p>
+        </article>
+        <article class="wood-card reveal" style="--tone:#241712">
+          <h3>Wenge</h3>
+          <p>Almost-black, dramatic and bold — a striking contrast for modern, sculptural work.</p>
+        </article>
+        <article class="wood-card reveal" style="--tone:#a86b3c">
+          <h3>Beech</h3>
+          <p>Pale, fine and dependable. A clean canvas that takes detail and finish exceptionally well.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOM ORDERS ===== -->
+  <section class="custom section" id="custom">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Made For You</p>
+        <h2 class="section__title reveal">Custom Orders</h2>
+        <p class="section__lead reveal">
+          Have something in mind? Every commission is designed around your idea,
+          your wood, and the moment it's meant for.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__step reveal">
+          <div class="timeline__icon">✎</div>
+          <h3>1 · Share Your Idea</h3>
+          <p>Tell us the occasion, the motif, the names or words you'd like carved. Sketches welcome.</p>
+        </div>
+        <div class="timeline__step reveal">
+          <div class="timeline__icon">❦</div>
+          <h3>2 · Choose the Wood</h3>
+          <p>We'll recommend a species and finish that suits the design — from pale beech to near-black wenge.</p>
+        </div>
+        <div class="timeline__step reveal">
+          <div class="timeline__icon">⚒</div>
+          <h3>3 · Handcrafted</h3>
+          <p>Your piece is shaped, carved and finished entirely by hand — a process measured in care, not speed.</p>
+        </div>
+        <div class="timeline__step reveal">
+          <div class="timeline__icon">✦</div>
+          <h3>4 · Delivered</h3>
+          <p>Carefully wrapped and sent to you, ready to gift, display, or treasure for generations.</p>
+        </div>
+      </div>
+
+      <div class="custom__cta reveal">
+        <a href="#contact" class="btn btn--primary">Start a Commission</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Kind Words</p>
+        <h2 class="section__title reveal">What People Say</h2>
+      </div>
+
+      <div class="slider reveal" id="slider">
+        <div class="slider__track" id="sliderTrack">
+          <blockquote class="slide">
+            <p>“Beautiful craftsmanship — the carving detail is even finer in person. A piece we'll keep forever.”</p>
+            <cite>— Maya R.</cite>
+          </blockquote>
+          <blockquote class="slide">
+            <p>“Amazing attention to detail. You can feel that every line was made by hand and with love.”</p>
+            <cite>— Daniel K.</cite>
+          </blockquote>
+          <blockquote class="slide">
+            <p>“A unique handmade gift that left the whole family speechless. Worth every moment of the wait.”</p>
+            <cite>— Sarah L.</cite>
+          </blockquote>
+          <blockquote class="slide">
+            <p>“The custom hamsa was exactly what I imagined, only more beautiful. True artistry.”</p>
+            <cite>— Yossi B.</cite>
+          </blockquote>
+        </div>
+
+        <button class="slider__btn slider__btn--prev" id="prevSlide" aria-label="Previous review">‹</button>
+        <button class="slider__btn slider__btn--next" id="nextSlide" aria-label="Next review">›</button>
+        <div class="slider__dots" id="sliderDots" aria-label="Choose review"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="section__eyebrow reveal">Get In Touch</p>
+        <h2 class="section__title reveal">Let's Create Something</h2>
+        <p class="reveal">
+          Questions, commissions, or just want to say hello? We'd love to hear from you.
+        </p>
+
+        <ul class="contact__list reveal">
+          <li>
+            <span class="contact__label">Phone</span>
+            <a href="tel:+10000000000">+1 (000) 000-0000</a>
+          </li>
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:hello@oliveandoak.demo">hello@oliveandoak.demo</a>
+          </li>
+          <li>
+            <span class="contact__label">Studio</span>
+            <span>By appointment only</span>
+          </li>
+        </ul>
+
+        <div class="contact__socials reveal">
+          <a href="https://wa.me/10000000000" class="btn btn--whatsapp" target="_blank" rel="noopener">
+            <span class="contact__wa-icon">✆</span> WhatsApp
+          </a>
+          <a href="#" class="social" aria-label="Instagram">IG</a>
+          <a href="#" class="social" aria-label="Facebook">FB</a>
+          <a href="#" class="social" aria-label="Pinterest">PIN</a>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell us about your idea…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <p class="contact__note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">❦</span>
+        <span class="footer__name">Olive &amp; Oak</span>
+        <p class="footer__tag">Handcrafted wooden art, made to be passed down.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#woods">Woods</a>
+        <a href="#custom">Custom Orders</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bar">
+      <p>© <span id="year"></span> Olive &amp; Oak Woodcraft · Demo site. All work shown is handmade.</p>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <img class="lightbox__img" id="lbImg" src="" alt="" />
+    <p class="lightbox__caption" id="lbCaption"></p>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next image">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
